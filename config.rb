@@ -3,6 +3,9 @@ additional_import_paths = ["sass", "bootstrap/lib"]
 
 # Require any additional compass plugins here.
 
+$:.unshift File.join(File.dirname(__FILE__), 'plugins', 'sass-globbing', 'lib')
+require 'sass-globbing'
+
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "css"
