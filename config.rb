@@ -1,3 +1,6 @@
+
+additional_import_paths = ["sass", "bootstrap/lib"]
+
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
