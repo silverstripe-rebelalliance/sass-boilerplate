@@ -1,0 +1,7 @@
+
+@mixin textOverflow{
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	-moz-binding: url(css/ellipsis.xml#ellipsis);
+}
