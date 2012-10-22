@@ -1,0 +1,24 @@
+/*
+This file imports just the files that define typographic conventions, for including in a TinyMCE editor
+or equivalent iframe
+
+Use this code in your mysite/_config.php (_after_ you have set your theme) to include:
+
+HtmlEditorConfig::get('cms')->setOptions(array(
+  'content_css' => Director::absoluteURL(BASE_URL . '/themes/' . SSViewer::current_theme() . '/css/typography.css')
+));
+
+*/
+
+// Include variables & mixins
+@import 'variables';
+@import 'mixins';
+
+// Reset
+@import 'reset';
+
+// Just the bits of bootstrap that affect typography
+@import "scaffolding";
+@import 'type';
+@import 'code';
+@import 'tables';
