@@ -14,8 +14,6 @@
 		<meta charset="utf-8">
 		<title><% if not $IsHomePage %>$Title &raquo; <% end_if %>SilverStripe.org - Open Source CMS / Framework</title>
 
-		<link rel="stylesheet" type="text/css" href="$ThemeDir/css/site.css" />
-
 		<!--[if IE]>
 			<link rel="stylesheet" type="text/css" href="$ThemeDir/css/ie.css">
 		<![endif]-->
