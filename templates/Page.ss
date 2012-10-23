@@ -1,28 +1,26 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
-<html lang="en">
+<!--[if lt IE 7 ]><html lang="en" class="ie ie6"><![endif]-->
+<!--[if IE 7 ]>   <html lang="en" class="ie ie7"><![endif]-->
+<!--[if IE 8 ]>   <html lang="en" class="ie ie8"><![endif]-->
+<!--[if !IE]> --> <html lang="en">               <!-- <![endif]-->
+
 	<head>
-		<% base_tag %>
-		<meta charset="utf-8">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="$ThemeDir/css/site.css" />
-
-		<!--[if lt IE 7 ]>
-			<link rel="stylesheet" type="text/css" href="$ThemeDir/css/ie.css">
-		<![endif]-->
-		<!--[if IE 8 ]>
-			<link rel="stylesheet" type="text/css" href="$ThemeDir/css/ie.css">
-		<![endif]-->
-		<!--[if IE 8 ]>
-			<link rel="stylesheet" type="text/css" href="$ThemeDir/css/ie.css">
-		<![endif]-->
-
 		<script type="text/javascript">
 			document.getElementsByTagName('html')[0].className += ' js';
 		</script>
+
+		<% base_tag %>
+
+		<meta charset="utf-8">
+		<title><% if not $IsHomePage %>$Title &raquo; <% end_if %>SilverStripe.org - Open Source CMS / Framework</title>
+
+		<link rel="stylesheet" type="text/css" href="$ThemeDir/css/site.css" />
+
+		<!--[if IE]>
+			<link rel="stylesheet" type="text/css" href="$ThemeDir/css/ie.css">
+		<![endif]-->
 	</head>
+
 	<body class="$ClassName">
 		<div id="Main" class="typography">
 
@@ -41,11 +39,5 @@
 			</div>
 
 		</div>
-
-		{{JavascriptRequirements}}
-
-		<!--[if lt IE 7 ]>
-			<script src="$ThemeDir/js/ie6.js"></script>
-		<![endif]-->
 	</body>
 </html>
