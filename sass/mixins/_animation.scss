@@ -26,49 +26,48 @@
 // so they are called from this mixin file. They are commented out by default.
 // Uncomment to use these mixins
 @mixin keyframeSettings($name){
-	@if($name == "grow"){
-0% {
-	right:-10px;
-}
-100% {
-	right:0px;
-}
-	}@else if($name == "fade"){
-0% {
-	opacity:0;
-}
-100% {
-	opacity:1;
-}
-	}@else{
-0% {
-	right:-10px;
-}
-100% {
-	right:0px;
-}
+	@if($name == "grow") {
+		0% {
+			right:-10px;
+		}
+		100% {
+			right:0px;
+		}
+	} @else if($name == "fade") {
+		0% {
+			opacity:0;
+		}
+		100% {
+			opacity:1;
+		}
+	} @else {
+		0% {
+			right:-10px;
+		}
+		100% {
+			right:0px;
+		}
 	}
-	}
-
+}
 
 @mixin keyframes($name){
 //Animation keyframes. Must be generated outside any selectors
-@-webkit-keyframes $name {
-    @include keyframeSettings($name);
-  }
-@-moz-keyframes $name {
-    @include keyframeSettings($name);
-  }
-@-ms-keyframes $name {
-    @include keyframeSettings($name);
-  }
-@-o-keyframes $name {
-    @include keyframeSettings($name);
-  }
-@keyframes $name {
-    @include keyframeSettings($name);
-  }
+	@-webkit-keyframes $name {
+		@include keyframeSettings($name);
 	}
+	@-moz-keyframes $name {
+		@include keyframeSettings($name);
+	}
+	@-ms-keyframes $name {
+		@include keyframeSettings($name);
+	}
+	@-o-keyframes $name {
+		@include keyframeSettings($name);
+	}
+	@keyframes $name {
+		@include keyframeSettings($name);
+	}
+}
 
 // This is the mixin you should call fromwithin your selector to apply animation effects
 // $effect needs a corrosponding keyframe, such as grow or fade,

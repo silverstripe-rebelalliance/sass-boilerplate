@@ -1,9 +1,15 @@
-
 @mixin doubleTextShadow($colorShadowTop, $colorShadowBottom){
 	-webkit-text-shadow: 0px -1px 0px $colorShadowTop, 0px 1px 0px $colorShadowBottom;
 	-moz-text-shadow: 0px -1px 0px $colorShadowTop, 0px 1px 0px $colorShadowBottom;
 	-o-text-shadow: 0px -1px 0px $colorShadowTop, 0px 1px 0px $colorShadowBottom;
 	text-shadow: 0px -1px 0px $colorShadowTop, 0px 1px 0px $colorShadowBottom;
+}
+
+@mixin textShadow($shadowColor){
+	-webkit-text-shadow: 1px 1px 0px $shadowColor;
+	-moz-text-shadow: 1px 1px 0px $shadowColor;
+	-o-text-shadow: 1px 1px 0px $shadowColor;
+	text-shadow: 1px 1px 0px $shadowColor;
 }
 
 //Mixin to create a regular box shadow

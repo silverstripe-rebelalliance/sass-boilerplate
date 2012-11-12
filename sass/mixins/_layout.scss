@@ -10,27 +10,39 @@
 		clear:both;
 	}
 	zoom:1; /* For IE 6/7 (trigger hasLayout) */
+	.ie7 &, .ie8 & {
+		width:100%
+	}
+	.ie7 & {
+		height:1px;
+	}
+}
+
+@mixin borderBox {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
 }
 
 //Aligns content as vertically centered
 @mixin verticalAlign{
 	display: table;
-	#IE7 &{
+	.ie7 &{
 		position: relative;
 	}
 	.center{
-		#IE7 &{
+		.ie7 &{
 			position: absolute;
 			top: 50%;
 		}
 		display: table-cell;
 		vertical-align: middle;
-		#IE7 & h2.verticalContent {
+		.ie7 & h2.verticalContent {
 			width: 204px;
 			text-align: center;
 		}
 		.verticalContent{
-			#IE7 &{
+			.ie7 &{
 				margin:0;
 				padding:0;
 				position: relative;
