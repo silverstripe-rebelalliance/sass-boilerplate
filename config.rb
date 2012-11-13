@@ -6,15 +6,12 @@ additional_import_paths = ["sass", "bootstrap/lib"]
 $:.unshift File.join(File.dirname(__FILE__), 'plugins', 'sass-globbing', 'lib')
 require 'sass-globbing'
 
-<<<<<<< HEAD
-=======
 $:.unshift File.join(File.dirname(__FILE__), 'plugins', 'compass-rgbapng', 'lib')
 require 'rgbapng'
 
 $:.unshift File.join(File.dirname(__FILE__), 'plugins', 'font-icons', 'lib')
 require 'font-icons'
 
->>>>>>> ce7efbe... Require in font-icons compass plugin
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "css"
