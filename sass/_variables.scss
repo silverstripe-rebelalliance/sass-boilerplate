@@ -1,7 +1,44 @@
-
-
 // Add local variables here
-$sansFontFamily: 'Zapfino'; // you might want to change this font...
+
+/* COLORS */
+
+$white:                   #ffffff;
+$offWhite:                #f7f7f7;
+$black:                   #000000;
+
+$grayLighter:             #e5e5e5;
+$grayLight:               #d4d4d4;
+$gray:                    #888888;
+$grayDark:                #444444;
+$grayDarker:              #333333;
+
+$messageBackgroundColor:  #fef4ba;
+$messageColor:            #e8c805;
+
+$goodBackgroundColor:     #ecf9d0;
+$goodColor:               #8fbe00;
+
+$requiredBackgroundColor: #f9d0d0;
+$requiredColor:           #cf0000;
+
+$baseFontColor:           $grayDarker;
+$linkColor:               #b80000;
+$linkColorHover:          #d80000;
+
+$headerColor:             #161616;
+
+/* FONTS */
+
+$baseFontSize:            13px; //must be set in pixels
+$baseLineHeight:          1.3rem; //must be set in terms of rem (relative to the base font size)
+
+$baseFontFamily:          Arial, Helvetica, sans-serif;
+$serifFontFamily:        'Zapfino'; // you might want to change this font...
+
+/* GRID */
+
+$grid-y:                  5px;
+$grid-x:                  5px;
 
 // Include bootstrap's variables last
 @import '../bootstrap/lib/variables';
